@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/defalt_padding"
+    android:text="@string/cadastro_de_usuario"
+    android:layout_gravity="center_horizontal"
+    style="style/Teste.DefaultTitle"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:text="@string/type_your_name"
+    android:inputType="textCapSentences" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/login"
+    android:inputType="text"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/senha"
+    android:inputType="textPassword"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/email"
+    android:inputType="textEmailAddress"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/data_nascimento"
+    android:inputType="date"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/salvar"/>
+
+    </LinearLayout>
+</ScrollView>
+

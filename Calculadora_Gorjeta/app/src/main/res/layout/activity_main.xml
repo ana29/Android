@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huawei.calculadora_gorjeta.MainActivity">
+
+    <ImageView
+        android:layout_width="476dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/android_imagem"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="347dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="@string/tip_calculator_app"
+        android:textColor="@color/TituloActivityMainView"
+        android:textSize="25dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/android_imagem"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/valorConta"
+        android:hint="@string/valor_da_conta"
+        android:inputType="numberDecimal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="360dp" />
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="308dp">
+
+
+        <TextView
+            android:layout_width="0.13dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.13"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="10%"
+            android:textSize="15dp"
+            android:layout_alignStart="@+id/textView"
+            android:id="@+id/textViewTip" />
+
+        <SeekBar
+            android:layout_width="0.12dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.74"
+            android:max="30"
+            android:progress="10"
+            android:indeterminate="false"
+            android:id="@+id/seekBar"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="54dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0.13dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.13"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tip"
+            />
+
+        <Button
+            android:layout_width="0.12dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.74"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/calcular_tip"
+            android:id="@+id/button_calcula_tip"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="39dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0.13dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.13"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/total"
+            />
+
+        <Button
+            android:layout_width="0.12dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.74"
+            android:layout_gravity="center_horizontal"
+            android:text="Calcular Total"
+            android:id="@+id/button_calcula_total" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="89dp"
+        android:gravity="center"
+        android:text="result"
+        android:layout_weight="0.13"
+        android:id="@+id/textViewResult"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</TableLayout>

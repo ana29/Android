@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defalt_padding">60dp</dimen>
+    <dimen name="defalt_title_size">22dp</dimen>
+</resources>

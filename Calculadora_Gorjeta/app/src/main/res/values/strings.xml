@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">"Calculadora_Gorjeta "</string>
+    <string name="valor_da_conta">Valor da conta</string>
+    <string name="tip_calculator_app">Tip Calculator App</string>
+    <string name="tip">Tip</string>
+    <string name="calcular_tip">Calcular Tip</string>
+    <string name="total">Total</string>
+</resources>
