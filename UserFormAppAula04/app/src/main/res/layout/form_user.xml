@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         tools:text="@string/type_your_name"
         android:inputType="textCapSentences"
-        android:id="@+id/nome"/>
+        android:id="@+id/name"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -22,9 +22,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/senha"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        android:id="@+id/senha"/>
+        android:id="@+id/password"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -36,14 +36,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/data_nascimento"
+        android:hint="@string/birthdate"
         android:inputType="date"
-        android:id="@+id/dataNascimento" />
+        android:id="@+id/birthday" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/salvar"
-        android:id="@+id/salvar"/>
+        android:text="@string/save"
+        android:id="@+id/save"/>
 
 </LinearLayout>

@@ -7,6 +7,7 @@
     android:padding="@dimen/defalt_padding">
 
    <FrameLayout
+
        android:id="@+id/form_fragment"
        android:layout_width="match_parent"
        android:layout_height="match_parent">

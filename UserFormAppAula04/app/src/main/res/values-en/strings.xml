@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">User Form App Aula 04</string>
+    <string name="type_your_name">type your name</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="save">Save</string>
+    <string name="cadastro_de_usuario">Cadastro de usuario</string>
+    <string name="full_name">Full Name</string>
+    <string name="form_user_birthdate">Birthdate</string>
+    <string name="form_user_email">Email</string>
+    <string name="form_user_password">Password</string>
+</resources>

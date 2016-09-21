@@ -2,9 +2,13 @@
     <string name="app_name">UserFormAppAula04</string>
     <string name="type_your_name">Digite seu nome</string>
     <string name="login">Login</string>
-    <string name="senha">Senha</string>
+    <string name="password">Senha</string>
     <string name="email">Email</string>
-    <string name="data_nascimento">Data nascimento</string>
-    <string name="salvar">Salvar</string>
+    <string name="birthdate">Data nascimento</string>
+    <string name="save">Salvar</string>
     <string name="cadastro_de_usuario">Cadastro de usuario</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="form_user_birthdate">Data de aniversario</string>
+    <string name="form_user_email">Email</string>
+    <string name="form_user_password">Senha</string>
 </resources>

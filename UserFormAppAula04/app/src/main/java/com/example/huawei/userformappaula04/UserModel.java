@@ -6,27 +6,27 @@ import java.io.Serializable;
  * Created by huawei on 20/09/16.
  */
 public class UserModel implements Serializable {
-    private String nome;
+    private String name;
     private String login;
     private String email;
-    private String dataNascimento;
-    private String senha;
+    private String birthdate;
+    private String password;
 
-    public UserModel(String nome, String email){
-        this.nome = nome;
+    public UserModel(String name, String email){
+        this.name = name;
         this.email = email;
     }
-    public UserModel(String nome, String email, String login, String senha, String dataNascimento ){
-        this.nome = nome;
+    public UserModel(String name, String email, String login, String password, String birthdate ){
+        this.name = name;
         this.email = email;
         this.login = login;
-        this.senha=senha;
-        this.dataNascimento=dataNascimento;
+        this.password=password;
+        this.birthdate =birthdate;
 
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
     public String getLogin() {
@@ -37,22 +37,22 @@ public class UserModel implements Serializable {
         return email;
     }
 
-    public String getDataNascimento() {
-        return dataNascimento;
+    public String getBirthdate() {
+        return birthdate;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getPassword() {
+        return password;
     }
 
     @Override
     public String toString() {
         return "UserModel{" +
-                "name='" + nome + '\'' +
+                "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", login='" + login + '\'' +
-                ", senha='" + senha + '\'' +
-                ", dataDeNascimento='" + dataNascimento + '\'' +
+                ", password='" + password + '\'' +
+                ", birthdate='" + birthdate + '\'' +
                 '}';
     }
 }
