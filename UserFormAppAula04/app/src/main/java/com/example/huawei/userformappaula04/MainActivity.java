@@ -20,16 +20,13 @@ public class MainActivity extends AppCompatActivity implements  UserFormFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        FragmentManager fm = getFragmentManager();
-//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//        fragmentTransaction.replace(FRAGMENT_USER_DETAIL, new UserFormFragment());
-//        fragmentTransaction.commit();
+
         getFragmentManager().beginTransaction().replace(R.id.form_fragment,
                 UserFormFragment.newInstance(), FRAGMENT_USER_EDIT).commit();
 
 
         if(isTablet()) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.form_fragment,
+            getFragmentManager().beginTransaction().replace(R.id.form_fragment,
                     UserDetailFragment.newInstance(), FRAGMENT_USER_DETAIL).commit();
         }
 
@@ -52,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements  UserFormFragment
 
             UserDetailFragment fragment = UserDetailFragment.newInstance(user);
 
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .replace(R.id.form_fragment, fragment)
                     .addToBackStack(null)
                     .commit();
