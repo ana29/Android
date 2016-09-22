@@ -1,14 +1,9 @@
 package com.example.huawei.userformappaula04;
 
-
-
-
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-
-
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,32 +34,35 @@ public class UserFormFragment extends Fragment {
         mBirthdate = (EditText) view.findViewById(R.id.birthday);
         mButtonSave =(Button) view.findViewById(R.id.save);
 
-        mButtonSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UserModel user = new UserModel(mName.getText().toString(),
-                        mEmail.getText().toString(),
-                        mLogin.getText().toString(),
-                        mPassword.getText().toString(),
-                        mBirthdate.getText().toString());
-                try {
-                    ((OnUserSavedListener) mActivity).onUserSaved(user);
-
-                } catch (ClassCastException e) {
-                    throw new ClassCastException(mActivity.toString()
-                            + " must implement OnUserSavedListener");
-                }
-
-            }
-
-        });
+        mButtonSave.setOnClickListener(bTOnSave());
 
 
 
 
         return view;
     }
+private View.OnClickListener bTOnSave(){
+    return new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            UserModel user = new UserModel(mName.getText().toString(),
+                    mEmail.getText().toString(),
+                    mLogin.getText().toString(),
+                    mPassword.getText().toString(),
+                    mBirthdate.getText().toString());
+            try {
+                ((OnUserSavedListener) mActivity).onUserSaved(user);
 
+            } catch (ClassCastException e) {
+                throw new ClassCastException(mActivity.toString()
+                        + " must implement OnUserSavedListener");
+            }
+
+        }
+
+    };
+
+}
     public static UserFormFragment newInstance() {
         UserFormFragment fragment = new UserFormFragment();
         Bundle args = new Bundle();

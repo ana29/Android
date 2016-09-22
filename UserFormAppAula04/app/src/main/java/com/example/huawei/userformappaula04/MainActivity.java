@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.DatePicker;
 
 /**
@@ -13,7 +14,7 @@ import android.widget.DatePicker;
  */
 public class MainActivity extends AppCompatActivity implements  UserFormFragment.OnUserSavedListener{
     private static final String FRAGMENT_USER_EDIT = "fragment_form";
-    private static final String FRAGMENT_USER_DETAIL = "fragment_detail";
+    private static final String FRAGMENT_USER_DETAIL = "fragment_details";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,8 +27,9 @@ public class MainActivity extends AppCompatActivity implements  UserFormFragment
 
 
         if(isTablet()) {
-            getFragmentManager().beginTransaction().replace(R.id.form_fragment,
+            getFragmentManager().beginTransaction().replace(R.id.details,
                     UserDetailFragment.newInstance(), FRAGMENT_USER_DETAIL).commit();
+
         }
 
     }
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements  UserFormFragment
 
         if(isTablet()) {
             UserFormFragment.OnUserSavedListener callback =
-                    (UserFormFragment.OnUserSavedListener)getSupportFragmentManager()
+                    (UserFormFragment.OnUserSavedListener)getFragmentManager()
                             .findFragmentByTag(FRAGMENT_USER_DETAIL);
 
 
