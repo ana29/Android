@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercicio01</string>
+    <string name="sum">sum</string>
+    <string name="parcela">Parcela</string>
+    <string name="sum_operator">+</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/first_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="118dp"
+            android:layout_toLeftOf="@+id/sum_operator"
+            android:layout_toStartOf="@+id/sum_operator"
+            android:hint="@string/parcela"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/sum_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/second_value"
+            android:layout_alignBottom="@+id/second_value"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sum_operator" />
+
+        <EditText
+            android:id="@+id/second_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/first_value"
+            android:layout_alignBottom="@+id/first_value"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:hint="@string/parcela"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cancel_button"
+            android:layout_alignBottom="@+id/cancel_button"
+            android:layout_alignLeft="@+id/first_value"
+            android:layout_alignStart="@+id/first_value"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/second_value"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/second_value"
+            android:layout_marginBottom="134dp"
+            android:text="@string/cancel" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
