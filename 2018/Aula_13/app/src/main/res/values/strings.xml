@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aula_13</string>
+    <string name="get">GET</string>
+    <string name="put">PUT</string>
+    <string name="id">ID</string>
+</resources>
